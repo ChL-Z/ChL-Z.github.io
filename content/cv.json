@@ -12,7 +12,8 @@
       "Prompt ambiguity detection",
       "Prompt injection defense",
       "Code quality & security in LLM-generated code",
-      "Automatic E2E test generation"
+      "Automatic E2E test generation",
+      "Grey Literature Extraction"
     ],
     "useful_links": [
       { "name": "Google Scholar", "url": "https://scholar.google.com/citations?user=qILHWeQAAAAJ&hl=fr", "icon": "scholar" },
