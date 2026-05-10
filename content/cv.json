@@ -1,0 +1,133 @@
+{
+  "sections_order": ["profile", "education", "publications", "talks", "activities"],
+
+  "profile": {
+    "name": "Zacharie Chenail-Larcher",
+    "title": "PhD researcher: NLP4SE & SE4NLP",
+    "affiliations": [
+      { "institution": "École de technologie supérieure (ÉTS)", "role": "PhD Candidate" }
+    ],
+    "research_topics": [
+      "LLM code smells",
+      "Prompt ambiguity detection",
+      "Prompt injection defense",
+      "Code quality & security in LLM-generated code",
+      "Automatic E2E test generation"
+    ],
+    "useful_links": [
+      { "name": "Google Scholar", "url": "https://scholar.google.com/citations?user=qILHWeQAAAAJ&hl=fr", "icon": "scholar" },
+      { "name": "ORCID", "url": "https://orcid.org/0009-0002-7464-6659", "icon": "orcid" },
+      { "name": "DBLP", "url": "https://dblp.org/pid/406/1365.html", "icon": "dblp" }
+    ],
+    "email": "zacharie.chenail.larcher@gmail.com"
+  },
+
+  "education": [
+    {
+      "name": "PhD in Software Engineering",
+      "institution": "École de technologie supérieure (ÉTS)",
+      "timeframe": "2025 — present",
+      "supervisors": ["Naouel Moha", "Florent Avellaneda"],
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvid7xG5b_zcgAH0p6jTl7i7F1T1jsgCHseQ&s"
+    },
+    {
+      "name": "Invited PhD Researcher",
+      "institution": "SnT, University of Luxembourg",
+      "timeframe": "2026",
+      "supervisors": ["Tegawendé F. Bissyandé", "Daniele Lunghi"],
+      "logo": "https://www.uni.lu/wp-content/uploads/sites/29/2023/07/logo-snt-square.png"
+    },
+    {
+      "name": "Master's in Software Engineering",
+      "institution": "École de technologie supérieure (ÉTS)",
+      "supervisors": ["Naouel Moha"],
+      "note": "Automatic E2E test generation and use case testing in IoT.",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvid7xG5b_zcgAH0p6jTl7i7F1T1jsgCHseQ&s"
+    },
+    {
+      "name": "Bachelor's in Computer Science and Software Engineering",
+      "institution": "Université du Québec à Montréal (UQAM)",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2o1i07wbKs63KVN6nW8tSDlr2pmdjXGgf2g&s"
+    }
+  ],
+
+  "publications": [
+    {
+      "title": "Specification and Detection of LLM Code Smells",
+      "venue": "International Conference on Software Engineering (ICSE 2026), NIER Track",
+      "year": 2026,
+      "type": "conference",
+      "authors": ["Brahim Mahmoudi", "Zacharie Chenail-Larcher", "Quentin Stiévenart", "Naouel Moha", "Florent AVELLANEDA"],
+      "authorship_note": "Co-First Author and equal contribution with Brahim Mahmoudi",
+      "preprint_link": "https://arxiv.org/abs/2512.18020",
+      "main_link": "https://conf.researchr.org/details/icse-2026/icse-2026-nier/37/Specification-and-Detection-of-LLM-Code-Smells",
+      "note": "https://github.com/Brahim-Mahmoudi/SpecDetect4LLM_ICSE"
+    },
+    {
+      "title": "GLiSE: A Prompt-Driven and ML-Powered Tool for Automated Grey Literature Extraction in Software Engineering",
+      "venue": "Mining Software Repositories (MSR 2026), Tool Track",
+      "year": 2026,
+      "type": "conference",
+      "authors": ["Brahim Mahmoudi", "Zacharie Chenail-Larcher", "Houcine Abdelkader Cherief", "Quentin Stiévenart", "Naouel Moha", "Florent AVELLANEDA"],
+      "authorship_note": "Co-First Author and equal contribution with Houcine Abdelkader Cherief and Brahim Mahmoudi",
+      "preprint_link": "https://arxiv.org/abs/2512.23066",
+      "main_link": "https://2026.msrconf.org/details/msr-2026-data-and-tool-showcase-track/1/GLiSE-A-Prompt-Driven-and-ML-Powered-Tool-for-Automated-Grey-Literature-Extraction-i",
+      "note": "https://github.com/anonymous10112025-prog/GLiSE"
+    },
+    {
+      "title": "Test generation from use case specifications for IoT systems: Custom, LLM-based, and hybrid approaches",
+      "venue": "IEEE Conference on Software Testing, Verification and Validation (ICST 2025), Short Paper Track",
+      "year": 2025,
+      "type": "conference",
+      "authors": ["Zacharie Chenail-Larcher", "Jean Baptiste Minani", "Naouel Moha"],
+      "main_link": "https://doi.org/10.1109/ICST62969.2025.10988996",
+      "doi": "10.1109/ICST62969.2025.10988996"
+    }
+  ],
+
+  "talks": [
+    {
+      "title": "Specification and Detection of LLM Code Smells",
+      "event": "International Conference on Software Engineering (ICSE 2026)",
+      "year": 2026,
+      "date": "April 2026",
+      "co_presenters": ["Brahim Mahmoudi"],
+      "link": "https://conf.researchr.org/details/icse-2026/icse-2026-nier/37/Specification-and-Detection-of-LLM-Code-Smells"
+    },
+    {
+      "title": "GLiSE: A Prompt-Driven and ML-Powered Tool for Automated Grey Literature Extraction in Software Engineering",
+      "event": "Mining Software Repositories (MSR 2026)",
+      "year": 2026,
+      "date": "April 2026",
+      "co_presenters": ["Brahim Mahmoudi"],
+      "link": "https://2026.msrconf.org/details/msr-2026-data-and-tool-showcase-track/1/GLiSE-A-Prompt-Driven-and-ML-Powered-Tool-for-Automated-Grey-Literature-Extraction-i"
+    },
+    {
+      "title": "Génération automatique de cas de tests pour systèmes IdO : Exploration de quatre approches",
+      "event": "92e Congrès de l'Acfas: Synergie entre ingénierie logicielle et intelligence artificielle",
+      "year": 2025,
+      "date": "May 2025",
+      "link": "https://www.acfas.ca/archives/evenements/congres/activites/88828"
+    },
+    {
+      "title": "Test generation from use case specifications for IoT systems: Custom, LLM-based, and hybrid approaches",
+      "event": "IEEE Conference on Software Testing, Verification and Validation (ICST 2025)",
+      "year": 2025,
+      "date": "April 2025",
+      "link": "https://conf.researchr.org/details/icst-2025/icst-2025-short-vision-emerging-results/6/Test-Generation-from-Use-Case-Specifications-for-IoT-Systems-Custom-LLM-Based-and-"
+    }
+  ],
+
+  "activities": [
+    {
+      "title": "Volunteer: Staff JFFI 2026",
+      "description": "Helped with the organisation of JFFI 2026.",
+      "link": "https://jffi.ca/"
+    },
+    {
+      "title": "Volunteer: Staff JFFI 2025",
+      "description": "Helped with the organisation of JFFI 2025.",
+      "link": "https://jffi.ca/2025"
+    }
+  ]
+}

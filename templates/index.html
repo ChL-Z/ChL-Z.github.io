@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ profile.name }}</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <h1>{{ profile.name }}</h1>
+  {% if profile.title %}<p class="title">{{ profile.title }}</p>{% endif %}
+
+  {% if profile.affiliations %}
+  <p class="affiliations">
+    {%- for aff in profile.affiliations -%}
+    {% if aff.role %}{{ aff.role }}, {% endif %}{{ aff.institution }}{% if not loop.last %} · {% endif %}
+    {%- endfor -%}
+  </p>
+  {% endif %}
+
+  {% if profile.email or profile.useful_links %}
+  <ul class="links">
+    {% if profile.email %}
+    <li><a href="mailto:{{ profile.email }}">{% include "icons/email.svg" ignore missing %}<span>{{ profile.email }}</span></a></li>
+    {% endif %}
+    {% for link in profile.useful_links or [] %}
+    <li><a href="{{ link.url }}" target="_blank" rel="noopener">{% if link.icon %}{% include "icons/" ~ link.icon ~ ".svg" ignore missing %}{% endif %}<span>{{ link.name }}</span></a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</header>
+
+<hr class="header-rule">
+
+{% for section in sections_order %}
+
+{% if section == "profile" %}
+  {% if profile.bio or profile.research_topics %}
+  <section id="about">
+    <h2>About</h2>
+    {% if profile.bio %}<p class="bio">{{ profile.bio }}</p>{% endif %}
+    {% if profile.research_topics %}
+    <ul class="topics">
+      {% for t in profile.research_topics %}<li>{{ t }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endif %}
+
+{% elif section == "education" and education %}
+  <section id="education">
+    <h2>Education</h2>
+    {% for edu in education %}
+    <article class="entry entry-edu">
+      <div class="side">{% if edu.logo %}<img class="logo" src="{{ edu.logo }}" alt="">{% endif %}</div>
+      <div class="body">
+        <h3>{{ edu.name }}</h3>
+        <p class="meta">{{ edu.institution }}{% if edu.timeframe %} · {{ edu.timeframe }}{% endif %}</p>
+        {% if edu.supervisors %}<p class="meta">Supervised by {{ edu.supervisors | join(', ') }}</p>{% endif %}
+        {% if edu.note %}<p class="note">{{ edu.note }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+
+{% elif section == "publications" and publications %}
+  <section id="publications">
+    <h2>Publications</h2>
+    {% for pub in publications %}
+    <article class="entry entry-pub">
+      <div class="side"><span class="year">{{ pub.year }}</span></div>
+      <div class="body">
+        <h3>{{ pub.title }}</h3>
+        <p class="authors">
+          {%- for a in pub.authors -%}
+          {% if is_me(a) %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% if not loop.last %}, {% endif %}
+          {%- endfor -%}
+        </p>
+        <p class="meta">{{ pub.venue }}{% if pub.type %} · <span class="pub-type">{{ pub.type }}</span>{% endif %}</p>
+        {% if pub.authorship_note %}<p class="note">{{ pub.authorship_note }}</p>{% endif %}
+        {% if pub.note %}<p class="note">{{ pub.note }}</p>{% endif %}
+        {% set has_links = pub.main_link or pub.preprint_link or pub.doi or pub.bibtex %}
+        {% if has_links %}
+        <p class="pub-links">
+          {% if pub.main_link %}<a href="{{ pub.main_link }}">paper</a>{% endif %}
+          {% if pub.preprint_link %}<a href="{{ pub.preprint_link }}">preprint</a>{% endif %}
+          {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">doi</a>{% endif %}
+          {% if pub.bibtex %}<details><summary>bibtex</summary><pre>{{ pub.bibtex }}</pre></details>{% endif %}
+        </p>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+
+{% elif section == "talks" and talks %}
+  <section id="talks">
+    <h2>Talks</h2>
+    {% for talk in talks %}
+    <article class="entry entry-talk">
+      <div class="side"><span class="year">{{ talk.year }}</span></div>
+      <div class="body">
+        <h3>{% if talk.link %}<a href="{{ talk.link }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</h3>
+        <p class="meta">
+          {{ talk.event }}
+          {%- if talk.date %} · {{ talk.date }}{% endif -%}
+          {%- if talk.type %} · <span class="talk-type">{{ talk.type }}</span>{% endif -%}
+        </p>
+        {% if talk.co_presenters %}<p class="meta">With {{ talk.co_presenters | join(', ') }}</p>{% endif %}
+        {% if talk.note %}<p class="note">{{ talk.note }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+
+{% elif section == "activities" and activities %}
+  <section id="activities">
+    <h2>Activities</h2>
+    {% for act in activities %}
+    <article class="entry entry-act">
+      <div class="body">
+        <h3>{% if act.link %}<a href="{{ act.link }}">{{ act.title }}</a>{% else %}{{ act.title }}{% endif %}</h3>
+        {% if act.description %}<p>{{ act.description }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+
+{% endif %}
+{% endfor %}
+
+</main>
+</body>
+</html>
