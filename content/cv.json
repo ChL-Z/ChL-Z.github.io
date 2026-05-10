@@ -42,7 +42,7 @@
       "name": "Master's in Software Engineering",
       "institution": "École de technologie supérieure (ÉTS)",
       "supervisors": ["Naouel Moha"],
-      "note": "Automatic E2E test generation and use case testing in IoT.",
+      "note": "Automatic E2E test case generation for IoT systems",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvid7xG5b_zcgAH0p6jTl7i7F1T1jsgCHseQ&s"
     },
     {
