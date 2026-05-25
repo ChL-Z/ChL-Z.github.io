@@ -54,6 +54,16 @@
 
   "publications": [
     {
+      "title": "LLM Code Smells: A Taxonomy and Detection Approach",
+      "venue": "Preprint",
+      "year": 2026,
+      "type": "journal",
+      "authors": ["Zacharie Chenail-Larcher", "Brahim Mahmoudi", "Quentin Stiévenart", "Naouel Moha", "Florent AVELLANEDA"],
+      "authorship_note": "Co-First Author and equal contribution with Brahim Mahmoudi",
+      "preprint_link": "https://arxiv.org/abs/2605.22976",
+      "note": "https://github.com/Brahim-Mahmoudi/Code_Smell_LLM"
+    },
+    {
       "title": "Specification and Detection of LLM Code Smells",
       "venue": "International Conference on Software Engineering (ICSE 2026), NIER Track",
       "year": 2026,
