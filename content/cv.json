@@ -27,7 +27,7 @@
     {
       "name": "PhD in Software Engineering",
       "institution": "École de technologie supérieure (ÉTS)",
-      "timeframe": "2025 — present",
+      "timeframe": "2025 - present",
       "supervisors": ["Naouel Moha", "Florent Avellaneda"],
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvid7xG5b_zcgAH0p6jTl7i7F1T1jsgCHseQ&s"
     },
@@ -58,7 +58,7 @@
       "venue": "Preprint",
       "year": 2026,
       "type": "journal",
-      "authors": ["Zacharie Chenail-Larcher", "Brahim Mahmoudi", "Quentin Stiévenart", "Naouel Moha", "Florent AVELLANEDA"],
+      "authors": ["Zacharie Chenail-Larcher", "Brahim Mahmoudi", "Quentin Stiévenart", "Naouel Moha", "Florent Avellaneda"],
       "authorship_note": "Co-First Author and equal contribution with Brahim Mahmoudi",
       "preprint_link": "https://arxiv.org/abs/2605.22976",
       "note": "https://github.com/Brahim-Mahmoudi/Code_Smell_LLM"
@@ -68,7 +68,7 @@
       "venue": "International Conference on Software Engineering (ICSE 2026), NIER Track",
       "year": 2026,
       "type": "conference",
-      "authors": ["Brahim Mahmoudi", "Zacharie Chenail-Larcher", "Quentin Stiévenart", "Naouel Moha", "Florent AVELLANEDA"],
+      "authors": ["Brahim Mahmoudi", "Zacharie Chenail-Larcher", "Quentin Stiévenart", "Naouel Moha", "Florent Avellaneda"],
       "authorship_note": "Co-First Author and equal contribution with Brahim Mahmoudi",
       "preprint_link": "https://arxiv.org/abs/2512.18020",
       "main_link": "https://conf.researchr.org/details/icse-2026/icse-2026-nier/37/Specification-and-Detection-of-LLM-Code-Smells",
@@ -79,7 +79,7 @@
       "venue": "Mining Software Repositories (MSR 2026), Tool Track",
       "year": 2026,
       "type": "conference",
-      "authors": ["Brahim Mahmoudi", "Zacharie Chenail-Larcher", "Houcine Abdelkader Cherief", "Quentin Stiévenart", "Naouel Moha", "Florent AVELLANEDA"],
+      "authors": ["Brahim Mahmoudi", "Zacharie Chenail-Larcher", "Houcine Abdelkader Cherief", "Quentin Stiévenart", "Naouel Moha", "Florent Avellaneda"],
       "authorship_note": "Co-First Author and equal contribution with Houcine Abdelkader Cherief and Brahim Mahmoudi",
       "preprint_link": "https://arxiv.org/abs/2512.23066",
       "main_link": "https://2026.msrconf.org/details/msr-2026-data-and-tool-showcase-track/1/GLiSE-A-Prompt-Driven-and-ML-Powered-Tool-for-Automated-Grey-Literature-Extraction-i",
@@ -131,9 +131,21 @@
 
   "activities": [
     {
+      "title": "Undergraduate Final Project Supervision, Continuation (Summer 2026)",
+      "description": "Supervised a new group of students continuing the Winter 2026 project on an AI-based web platform for automated scientific literature search at ÉTS. Faculty supervisors: Naouel Moha and Ghizlane El Boussaidi."
+    },
+    {
+      "title": "Undergraduate Final Project Supervision (Winter 2026)",
+      "description": "Initiated and led a final undergraduate project on an AI-based web platform for automated scientific literature search at ÉTS. Supervised and mentored the student team as project lead and technical advisor. Faculty supervisors: Naouel Moha and Ghizlane El Boussaidi."
+    },
+    {
       "title": "Volunteer: Staff JFFI 2026",
       "description": "Helped with the organisation of JFFI 2026.",
       "link": "https://jffi.ca/"
+    },
+    {
+      "title": "Graduate Student Mentoring (Winter 2026)",
+      "description": "Guided Amrane Ghiles on his Master's project titled 'Evaluation and optimization of simple, black-box, and accessible approaches for prompt injection detection in LLM-based applications'. Faculty supervisor: Naouel Moha."
     },
     {
       "title": "Volunteer: Staff JFFI 2025",
