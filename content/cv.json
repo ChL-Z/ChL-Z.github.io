@@ -13,7 +13,8 @@
       "Prompt injection defense",
       "Code quality & security in LLM-generated code",
       "Automatic E2E test generation",
-      "Grey Literature Extraction"
+      "Grey Literature Extraction",
+      "Dataset Generation"
     ],
     "useful_links": [
       { "name": "Google Scholar", "url": "https://scholar.google.com/citations?user=qILHWeQAAAAJ&hl=fr", "icon": "scholar" },
@@ -53,6 +54,16 @@
   ],
 
   "publications": [
+    {
+      "title": "RiskyPy: Toward Automated Prompt Generation Tasks Calibrated to Model Proficiency for Joint Security and Functionality Evaluation of Generated Code",
+      "venue": "Preprint",
+      "year": 2026,
+      "type": "conference",
+      "authors": ["Zacharie Chenail-Larcher", "Daniele Lunghi", "Melissa TESSA", "Jacques Klein", "Tegawendé F. Bissyandé", "Florent Avellaneda", "Naouel Moha"],
+      "authorship_note": "Co-First Author and equal contribution with Daniele Lunghi",
+      "preprint_link": "https://doi.org/10.5281/zenodo.23088677",
+      "note": "https://github.com/ChL-Z/RiskyPy-Pipeline"
+    },
     {
       "title": "LLM Code Smells: A Taxonomy and Detection Approach",
       "venue": "Preprint",
